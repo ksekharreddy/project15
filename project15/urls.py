@@ -17,9 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from app.views import *
 from app2.views import *
+from app3.views import *
+from app4.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('jinga_app2/',jinga_app2,name='jinga_app2'),
     path('apptwo/',apptwo,name='apptwo'),
+    path('app3/',app3,name='app3'),
+    path('app4/',app4,name='app4'),
 ]
